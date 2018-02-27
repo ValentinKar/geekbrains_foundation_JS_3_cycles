@@ -12,9 +12,6 @@
  * xxxxxxxxx
  * ```
  */
-let string = 'x'; 
-console.log(string); 
-for (let i = 2; i <= 20; i++)  {
-  string += 'xx'; 
+for (let i = 2, string = 'x'; i <= 20; string += 'xx', i++)  {
   console.log(string); 
 }; 
