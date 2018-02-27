@@ -35,10 +35,11 @@ let isSimple = (arr) => {
 const arrayOfNumbers = (rangeOfSearch) => {
   // пустой массив, который будет заполнен простыми числами
   let returnArray = []; 
-  let i = rangeOfSearch[0]; 
+  // let i = rangeOfSearch[0]; 
+  let i = 2; 
   while (i <= rangeOfSearch[1])  {
     // проверяем, является ли i простым числом 
-    if (isSimple([i, Math.sqrt(rangeOfSearch[1])]))  {
+    if (isSimple([i, Math.sqrt(i)]))  {
       // дополняем массив простых чисел еще одним 
       returnArray.push(i); 
     }; 
